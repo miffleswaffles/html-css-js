@@ -1,0 +1,181 @@
+.rowDayTour {
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: 60px;
+}
+
+.dayTour-intro {
+    display: inline-table;
+    vertical-align: top;
+    white-space: normal;
+    margin-right: 30px;
+    width: 250px;
+}
+
+.cardNav {
+    text-align: right;
+}
+
+.prev-card,
+.next-card {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    background-color: $gold;
+    i {
+        @extend %centerPos
+    }
+}
+
+// CARDS DESTINATION ===================================
+.cardDesti-wrap {
+    display: inline-block;
+    width: 890px;
+    overflow-x: hidden;
+    padding: 10px 0;
+
+    .cardDesti {
+        
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+        margin-right: 15px;
+        width: 315px;
+        background-color: $lightGrey;
+        border-radius: 8px 8px;
+        white-space: normal;
+        @extend %dropShadow;
+    }
+    .imgHolder {
+        width: 100%;
+        height: 257px;
+        background-color: $darkGrey;
+    }
+    .desti-cont {
+        padding: 30px;
+    }
+    .desti-title {
+        display: inline-table;
+        width: 100%;
+        margin-bottom: 10px;
+        overflow: auto;
+    }
+    .title-txt {
+        display: table-cell;
+        font-weight: 500;
+        width: 60%;
+    }
+    .counter {
+        display: table-cell;
+        position: relative;
+        text-align: right;
+        vertical-align: bottom;
+        width: 40%;
+    }
+    .counterNow {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .desti-desc {
+        padding-top: 10px;
+        border-top: thin $midGrey solid;
+    }
+}
+
+// END CARDS DESTINATION =========================
+select {
+    width: 351px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+   
+    background-image: url('../img/svg/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 95%, 50%;
+    background-color: $lightGrey;
+
+
+
+    padding-left: 10px;
+    margin: 15px 0;
+    -webkit-appearance: none;
+
+    option {
+        -webkit-appearance: none;
+    }
+}
+.cardRates {
+    width: 351px;
+    box-sizing: border-box;
+    background-color: $lightGrey;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 5px;
+    h3 {
+        padding: 15px 0;
+    }
+    .ratesWrap{
+        margin-bottom: 30px;
+    }
+    tr.hover:hover>td {
+        background-color: $darkGrey;
+        font-weight: 500;
+        color: white;
+    }
+    td {
+        border-top: 1px $midGrey solid;
+    }
+    .transpoCategory {
+        font-weight: 400;
+        padding-top: 15px;
+        border: none;
+    }
+    .label {
+        font-size: 10.2px;
+        border: none;
+    }
+    .left {
+        width: 30%;
+    }
+    .right {
+        width: 70%;
+    }
+
+    .btn-book {
+        position: relative;
+
+        height: 50px;
+        margin: 10px -30px 30px -30px;
+    }
+    button {
+        display: block;
+        border: none;
+        @extend %centerPos;
+        width: 100%;
+        height: 50px;
+        background-color: $gold;
+        text-transform: uppercase;
+        color: white;
+
+    }
+    
+    .inclusionInfo {
+        .right {
+            padding: 15px 0;
+            width: 60%;
+        }
+        .left {
+            vertical-align: top;
+            padding-top: 30px;
+            font-weight: 500;
+        }
+        li {
+            font-size: 10.2px;
+        }
+    }
+}

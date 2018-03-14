@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  text-rendering: optimizeLegibility; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.cardDesti-wrap .cardDesti {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.prev-card i,
+.next-card i, .cardRates button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+* {
+  font-family: 'fira sans', Helvetica, sans-serif;
+  font-weight: 400;
+  color: #58595b; }
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.25; }
+
+h1, .h1 {
+  font-size: 31.25px; }
+
+h2, .h2 {
+  font-size: 25px; }
+
+h3, .h3 {
+  font-size: 20px; }
+
+h4, .h4 {
+  font-size: 16px; }
+
+p, span, ul, ol, li, td {
+  font-size: 12.8px;
+  line-height: 1.5; }
+
+i {
+  color: white; }
+
+.rowDayTour {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: 60px; }
+
+.dayTour-intro {
+  display: inline-table;
+  vertical-align: top;
+  white-space: normal;
+  margin-right: 30px;
+  width: 250px; }
+
+.cardNav {
+  text-align: right; }
+
+.prev-card,
+.next-card {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  background-color: #b78c2e; }
+
+.cardDesti-wrap {
+  display: inline-block;
+  width: 890px;
+  overflow-x: hidden;
+  padding: 10px 0; }
+  .cardDesti-wrap .cardDesti {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    margin-right: 15px;
+    width: 315px;
+    background-color: #f9f9f9;
+    border-radius: 8px 8px;
+    white-space: normal; }
+  .cardDesti-wrap .imgHolder {
+    width: 100%;
+    height: 257px;
+    background-color: #58595b; }
+  .cardDesti-wrap .desti-cont {
+    padding: 30px; }
+  .cardDesti-wrap .desti-title {
+    display: inline-table;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: auto; }
+  .cardDesti-wrap .title-txt {
+    display: table-cell;
+    font-weight: 500;
+    width: 60%; }
+  .cardDesti-wrap .counter {
+    display: table-cell;
+    position: relative;
+    text-align: right;
+    vertical-align: bottom;
+    width: 40%; }
+  .cardDesti-wrap .counterNow {
+    font-size: 16px;
+    font-weight: 500; }
+  .cardDesti-wrap .desti-desc {
+    padding-top: 10px;
+    border-top: thin #d1d3d4 solid; }
+
+select {
+  width: 351px;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+  background-image: url("../img/svg/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 95%, 50%;
+  background-color: #f9f9f9;
+  padding-left: 10px;
+  margin: 15px 0;
+  -webkit-appearance: none; }
+  select option {
+    -webkit-appearance: none; }
+
+.cardRates {
+  width: 351px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 5px; }
+  .cardRates h3 {
+    padding: 15px 0; }
+  .cardRates .ratesWrap {
+    margin-bottom: 30px; }
+  .cardRates tr.hover:hover > td {
+    background-color: #58595b;
+    font-weight: 500;
+    color: white; }
+  .cardRates td {
+    border-top: 1px #d1d3d4 solid; }
+  .cardRates .transpoCategory {
+    font-weight: 400;
+    padding-top: 15px;
+    border: none; }
+  .cardRates .label {
+    font-size: 10.2px;
+    border: none; }
+  .cardRates .left {
+    width: 30%; }
+  .cardRates .right {
+    width: 70%; }
+  .cardRates .btn-book {
+    position: relative;
+    height: 50px;
+    margin: 10px -30px 30px -30px; }
+  .cardRates button {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 50px;
+    background-color: #b78c2e;
+    text-transform: uppercase;
+    color: white; }
+  .cardRates .inclusionInfo .right {
+    padding: 15px 0;
+    width: 60%; }
+  .cardRates .inclusionInfo .left {
+    vertical-align: top;
+    padding-top: 30px;
+    font-weight: 500; }
+  .cardRates .inclusionInfo li {
+    font-size: 10.2px; }
+
+body {
+  position: relative;
+  margin: 0 auto;
+  width: 1170px;
+  overflow: auto; }
+
+hr {
+  border-top: 3px #b78c2e solid;
+  width: 80px;
+  margin: 10px 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td {
+  padding: 5px; }
+
+ul, ol, li {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+li {
+  text-align: left;
+  white-space: normal;
+  padding: 2px 5px; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.center {
+  text-align: center; }
