@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style: none;
     text-rendering: optimizeLegibility;
-    // outline: 1px red solid;
+    outline: 1px red solid;
 }
 
 .clearfix:after {
@@ -14,18 +14,15 @@
     clear: both;
 }
 
-
 @import 'variables';
 @import 'font';
 @import 'module';
-
-
-
 body {
-    position: relative;
     margin: 0 auto;
-    width: 1170px;
     overflow: auto;
+    height: 500px;
+    width: 1170px;
+
 }
 
 hr {
@@ -33,7 +30,6 @@ hr {
     width: 80px;
     margin: 10px 0;
 }
-
 
 table {
     width: 100%;
@@ -45,7 +41,9 @@ td {
     padding: 5px;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -57,13 +55,81 @@ li {
     padding: 2px 5px;
 }
 
-.left {
+// combo box
+select {
+    width: 351px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-image: url('../img/svg/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 95%, 50%;
+    background-color: $lightGrey;
+    padding-left: 10px;
+    margin: 15px 0;
+    padding-right: 45px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+         -o-appearance: none;
+    &::-ms-expand {
+        display: none;
+    }
+    [disabled]{
+        background-color: $darkGrey;
+        font-size: 14px;
+        color: white;
+
+    }
+}
+
+// radio button
+form{
+    margin: 15px 0;
+	position: relative;
+	width: 352px;
+	overflow: hidden;
+    border-radius: 16px;
+    background-color: $lightGrey;
+}
+label {
+	position: relative;
+	cursor: pointer;
+	display: table;
+	float: left;
+	width: 25%;
+	height: 35px;
+
+}
+input {
+	position: absolute;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	     -o-appearance: none;
+	&:checked + .category-label {
+        background: $blue;
+        color: white;
+        font-weight: 600;
+	}
+}
+.category-label {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+.txt-left {
     text-align: left;
 }
-.right {
+
+.txt-right {
     text-align: right;
 }
 
-.center {
+.txt-center {
     text-align: center;
 }
