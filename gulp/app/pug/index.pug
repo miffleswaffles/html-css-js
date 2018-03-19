@@ -8,11 +8,56 @@ html(lang="en")
         link(href="https://use.fontawesome.com/releases/v5.0.8/css/all.css", rel="stylesheet")
         link(href="../css/styles.css", rel="stylesheet")
         script.
+            window.onscroll = function () {
+    myFunction()
+};
 
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
     body
+        //- HERO   
+        .hero
+            .hero-component
+                .hero-logo
+                ul.hero-nav-day.h4
+                    li
+                        a(href="#") Countryside
+                    li
+                        a(href="#") Panglao
+                    li
+                        a(href="#") Dolphin watching & Island Hopping
+                    li
+                        a(href="#") Danao
+                    li
+                        a(href="#") Anda
+                    li
+                        a(href="#") Jardin Necitas
+                ul.hero-nav-normal
+                    li
+                        a(href="#") Tour rates
+                    li
+                        a(href="#") Package rates
+                    li
+                        a(href="#") Transport rentals
+                    li
+                        a(href="#") Testimonial
+                    li
+                        a(href="#") About us
+                    li
+                        a(href="#") Legalities
+                p.hero-contact (038) 411 1867  -  (Sun) 0933 486 5197  -  (Globe) 0995 499 1981  -  george.garcia@expbohol.com
         .main-section
+            //- left-panel
             .left-panel
-                nav
+                nav.header#myHeader
                     ul
                         li
                             .nav-logo

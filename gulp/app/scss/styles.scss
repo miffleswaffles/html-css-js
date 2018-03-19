@@ -17,10 +17,10 @@
 @import 'variables';
 @import 'font';
 @import 'module';
-body {
-    margin: 0 auto;
-    width: 1170px;
 
+html, body {
+    overflow: auto;
+    margin: 0 auto;
 }
 
 hr {

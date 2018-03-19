@@ -1,14 +1,95 @@
+// hero
+.hero {
+    width: 100%;
+    min-width: 1170px;
+    height: 100vh;
+    min-height: 750px;
+    margin-bottom: 60px;
+    background-image: url('../img/hero-bg-100.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.hero-component {
+    margin-top: 130px;
+    width: 80%;
+    min-width: 830px;
+    min-height: 650px;
+    li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border-left: thin solid $darkGrey;
+        &:nth-child(1) {
+            border: none;
+        }
+    }
+    a {
+        display: block;
+        padding: 0 15px;
+    }
+}
+
+.hero-nav-day {
+    margin-top: 30px;
+    text-align: center;
+    li {
+        font-size: 1em;
+    }
+}
+
+.hero-nav-normal {
+    margin-top: 150px;
+    margin-bottom: 15px;
+    text-align: center;
+    li {
+        border: none;
+    }
+    a {
+        padding: 0 5px;
+    }
+}
+
+.hero-contact {
+    text-align: center;
+}
+
+.hero-logo {
+    height: 350px;
+    background-image: url('../img/svg/hero-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+// main-section
 .main-section {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
 }
-
+// left-panel
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
 .left-panel {
     display: inline-block;
     vertical-align: top;
     width: 380px;
-
     ul {
         margin-left: 30px;
     }
@@ -16,7 +97,7 @@
         text-align: right;
         display: table-row;
         height: 50px;
-        &:hover > a {
+        &:hover>a {
             background-color: $gold;
             font-weight: 600;
             color: white;
@@ -28,7 +109,7 @@
         padding-right: 15px;
         width: 260px;
     }
-    .nav-logo{
+    .nav-logo {
         background-image: url('../img/svg/navlogo.svg');
         background-repeat: no-repeat;
         background-size: auto;
@@ -38,7 +119,7 @@
         padding-right: 15px;
     }
 }
-
+// right-panel
 .right-panel {
     display: inline-block;
 }
@@ -48,12 +129,14 @@
     overflow-x: hidden;
     margin-bottom: 60px;
 }
+
 // TOUR CARDS
-.tour-rates{
+.tour-rates {
     display: inline-block;
     margin-right: 15px;
     vertical-align: top;
 }
+
 .tour-info {
     display: inline-table;
     vertical-align: top;
@@ -83,10 +166,10 @@
 }
 
 .destination-wrap {
-    display: inline-block;
-    // width: 475px;
+    display: inline-block; // width: 475px;
     padding: 10px 0;
 }
+
 .destination {
     display: inline-block;
     vertical-align: top;
@@ -142,13 +225,18 @@
 
 // RATES
 .tour-rates-info {
-    p, td, th, h3, button{
+    p,
+    td,
+    th,
+    h3,
+    button {
         -webkit-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     width: 351px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: $lightGrey;
     border-radius: 16px;
@@ -158,6 +246,7 @@
         padding: 15px 0;
     }
 }
+
 .tour-rates-per-pax {
     margin-bottom: 30px;
     th {
@@ -212,6 +301,7 @@ button {
     text-transform: uppercase;
     color: white;
 }
+
 .tour-notes {
     .tour-notes-labels {
         width: 30%;

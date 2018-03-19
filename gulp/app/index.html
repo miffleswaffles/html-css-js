@@ -7,12 +7,45 @@
     <title>Explore Bohol</title>
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"/>
     <link href="../css/styles.css" rel="stylesheet"/>
-    <script></script>
+    <script>
+      window.onscroll = function() {myFunction()};     
+      function myFunction() {
+          var header = document.getElementById("myHeader");
+          var sticky = header.offsetTop;
+          if (window.pageYOffset >= sticky) {
+              header.classList.add("sticky");
+          } else {
+              header.classList.remove("sticky");
+          }
+      }
+    </script>
   </head>
   <body>
+    <div class="hero">
+      <div class="hero-component">
+        <div class="hero-logo"></div>
+        <ul class="hero-nav-day h4">
+          <li><a href="#">Countryside</a></li>
+          <li><a href="#">Panglao</a></li>
+          <li><a href="#">Dolphin watching & Island Hopping</a></li>
+          <li><a href="#">Danao</a></li>
+          <li><a href="#">Anda</a></li>
+          <li><a href="#">Jardin Necitas</a></li>
+        </ul>
+        <ul class="hero-nav-normal">
+          <li><a href="#">Tour rates</a></li>
+          <li><a href="#">Package rates</a></li>
+          <li><a href="#">Transport rentals</a></li>
+          <li><a href="#">Testimonial</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Legalities</a></li>
+        </ul>
+        <p class="hero-contact">(038) 411 1867  -  (Sun) 0933 486 5197  -  (Globe) 0995 499 1981  -  george.garcia@expbohol.com</p>
+      </div>
+    </div>
     <div class="main-section">
       <div class="left-panel">
-        <nav>
+        <nav class="header" id="myHeader">
           <ul>
             <li>
               <div class="nav-logo"></div>
