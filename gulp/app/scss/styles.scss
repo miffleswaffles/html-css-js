@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style: none;
     text-rendering: optimizeLegibility;
-    outline: 1px red solid;
+    // outline: 1px red solid;
 }
 
 .clearfix:after {
@@ -19,8 +19,6 @@
 @import 'module';
 body {
     margin: 0 auto;
-    overflow: auto;
-    height: 500px;
     width: 1170px;
 
 }
@@ -43,7 +41,7 @@ td {
 
 ul,
 ol,
-li {
+li, a {
     list-style: none;
     padding: 0;
     margin: 0;

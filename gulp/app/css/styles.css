@@ -4,8 +4,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  text-rendering: optimizeLegibility;
-  outline: 1px red solid; }
+  text-rendering: optimizeLegibility; }
 
 .clearfix:after {
   content: "";
@@ -60,13 +59,40 @@ i {
 .bold {
   font-weight: 500; }
 
+.main-section {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
 .left-panel {
-  width: 300px;
-  height: 100px;
-  background-color: red; }
+  display: inline-block;
+  vertical-align: top;
+  width: 380px; }
+  .left-panel ul {
+    margin-left: 30px; }
+  .left-panel li {
+    text-align: right;
+    display: table-row;
+    height: 50px; }
+    .left-panel li:hover > a {
+      background-color: #b78c2e;
+      font-weight: 600;
+      color: white; }
+  .left-panel a {
+    vertical-align: middle;
+    display: table-cell;
+    padding-right: 15px;
+    width: 260px; }
+  .left-panel .nav-logo {
+    background-image: url("../img/svg/navlogo.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 60px; }
+  .left-panel .nav-contact {
+    padding-right: 15px; }
 
 .right-panel {
-  float: left; }
+  display: inline-block; }
 
 .row-day-tour {
   white-space: nowrap;
@@ -97,7 +123,8 @@ i {
   width: 40px;
   height: 40px;
   margin-right: 5px;
-  background-color: #b78c2e; }
+  background-color: #b78c2e;
+  cursor: pointer; }
 
 .destination-wrap {
   display: inline-block;
@@ -213,8 +240,6 @@ button {
 
 body {
   margin: 0 auto;
-  overflow: auto;
-  height: 500px;
   width: 1170px; }
 
 hr {
@@ -232,7 +257,7 @@ td {
 
 ul,
 ol,
-li {
+li, a {
   list-style: none;
   padding: 0;
   margin: 0; }

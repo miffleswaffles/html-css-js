@@ -1,12 +1,46 @@
-.left-panel {
-    // float: left;
-    width: 300px;
-    height: 100px;
-    background-color: red;
-
+.main-section {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
+
+.left-panel {
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
+
+    ul {
+        margin-left: 30px;
+    }
+    li {
+        text-align: right;
+        display: table-row;
+        height: 50px;
+        &:hover > a {
+            background-color: $gold;
+            font-weight: 600;
+            color: white;
+        }
+    }
+    a {
+        vertical-align: middle;
+        display: table-cell;
+        padding-right: 15px;
+        width: 260px;
+    }
+    .nav-logo{
+        background-image: url('../img/svg/navlogo.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 60px;
+    }
+    .nav-contact {
+        padding-right: 15px;
+    }
+}
+
 .right-panel {
-    float: left;
+    display: inline-block;
 }
 
 .row-day-tour {
@@ -42,6 +76,7 @@
     height: 40px;
     margin-right: 5px;
     background-color: $gold;
+    cursor: pointer;
     i {
         @extend %centerPos
     }
